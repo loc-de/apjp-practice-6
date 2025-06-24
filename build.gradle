@@ -1,5 +1,11 @@
 plugins {
     id 'java'
+    id 'checkstyle'
+}
+
+checkstyle {
+    toolVersion = '10.12.3'
+    config = resources.text.fromFile('checkstyle.xml')
 }
 
 group = 'com.polis'
